@@ -1,1 +1,16 @@
-<p>mart works!</p>
+<section class="pokemon-team-section">
+  <h2>🌟 My Favorite Pokémon Team (Kanto, Johto, Hoenn)</h2>
+  <div class="pokemon-grid">
+    
+    @for (item of pokemonService.pokemonteam(); track item.pokemon) {
+      <div class="pokemon-card">
+        <span class="region-badge">{{ item.region }}</span>
+        <h3>{{ item.pokemon }}</h3>
+        <p><strong>Type:</strong> {{ item.type }}</p>
+        <p><strong>Held Item:</strong> 🪙 {{ item.heldItem }}</p>
+        <p class="description"><em>"{{ item.desc }}"</em></p>
+      </div>
+    }
+    
+  </div>
+</section>

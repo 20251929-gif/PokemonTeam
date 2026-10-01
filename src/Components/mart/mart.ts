@@ -16,6 +16,6 @@ template: `
   </div>
 `
 })
-export class MenuComponent {
+export class MartComponent {
 pokemart = inject(PokeMart);
 }
