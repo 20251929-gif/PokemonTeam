@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { PokeMart } from '../../app/pokemart';
+import { PokeMart } from '../../pokemart';
 
 @Component({
 selector: 'app-menu',
