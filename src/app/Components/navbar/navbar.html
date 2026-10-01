@@ -1,15 +1,8 @@
-<div class="logo"> Navigation </div>
-<ul class="nav-links">
-  <li>
-    <a routerLink="/home" routerLinkActive="active-link">Home</a>
-  </li>
-  <li>
-    <a routerLink="/johtogym" routerLinkActive="active-link">Johto</a>
-  </li>
-  <li>
-    <a routerLink="/kantogym" routerLinkActive="active-link">Kanto</a>
-  </li>
-  <li>
-    <a routerLink="/trainer-display" routerLinkActive="active-link">Hoenn</a>
-  </li>
-</ul>
+<nav class="navbar">
+  <div class="nav-brand">Navigation</div>
+  <div class="nav-links">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+    <a routerLink="/mart" routerLinkActive="active">PokeMart</a>
+    <a routerLink="/cart" routerLinkActive="active">Cart</a>
+  </div>
+</nav>
