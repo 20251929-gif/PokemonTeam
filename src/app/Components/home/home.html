@@ -1,0 +1,17 @@
+<div class="page">
+  <h1>Favorite Pokémon</h1>
+
+  <div class="team-container">
+    @for (member of pokemonTeam(); track member.pokemon) {
+      <section class="card">
+        <h2>{{ member.pokemon }}</h2>
+        <p><strong>Region:</strong> {{ member.region }}</p>
+        <p><strong>Type:</strong> {{ member.type }}</p>
+        <p><strong>Held Item:</strong> {{ member.heldItem }}</p>
+        <p><em>"{{ member.desc }}"</em></p>
+      </section>
+    } @empty {
+      <p class="empty-state">No Pokémon in your team yet!</p>
+    }
+  </div>
+</div>
